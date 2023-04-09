@@ -1,0 +1,104 @@
+:root {
+	
+	--c1: #32437D;
+	--c2: #D41E26;
+	--c3: #8F899F;
+	--c4: #B45C6C;
+	--c5: #E2E5EC;
+	--c6: #FFFFFF;
+}
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Poppins", sans-serif;
+	background-color: var(--c6);
+	color: var(--c1);
+	padding-top: 160px;
+	
+
+}
+
+
+.cabecera{
+	position: fixed;
+	background-color: var(--c5);
+	height: 160px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	//box-shadow: 0 5px 5px var(--c1);
+	z-index: 100;
+}
+
+.barraSuperior{
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.logo{
+	justify-content: center;
+	display: block;
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--c1);
+	
+}
+
+.texLogo{
+	color: var(--c1);
+	text-align: center;
+}
+
+
+
+@media (max-width: 1080px) {
+	.barraSuperior{
+		max-width: 900px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.barraSuperior{
+		max-width: 600px;
+	}
+}
+
+@media (max-width: 580px) {
+	body{
+		padding-top: 90px;
+	}
+
+	.cabecera{
+		height: 90px;
+	}
+	
+	.logoUmss{
+		width: 55px;
+		height: 55px;
+	}
+	
+	.logoFcyt{
+		width: 55px;
+		height: 55px;
+	}
+
+	.barraSuperior{
+		padding: 5px 20px;
+	}
+
+	.logo{
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+}
+
+

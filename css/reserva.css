@@ -1,0 +1,252 @@
+.cuerpo{
+	display: flex;
+	text-align: center;
+	width: 1080px;
+	//min-height: 73vh;
+	padding: 10px 0;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.cajaLogin{
+	margin-top: 30px;
+	width: 800px;
+	background-color: var(--c5);
+	box-shadow: 0px 0px 5px 5px var(--c3);
+	border-radius: 15px;
+	padding: 25px 50px;
+}
+
+.titulo{
+	margin-top: 0px;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.subtitulo{
+	padding-top: 10px;
+	text-align: center;
+	width:250px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 550;
+}
+
+
+.descripcion{
+	margin-top: 5px;
+	font-size: 17px;
+	font-weight: 500;
+	color: var(--c1);
+	width: 700px;
+	height: 80px;
+	border-radius: 10px;
+	border: 2px var(--c3) solid;
+	padding: 10px;
+	resize:none;
+}	
+
+.entrada{
+	margin-top:10px;
+	display: flex;
+	justify-content:space-between;
+}
+input{
+	color: var(--c1);
+	font-weight: 500;
+	font-size: 18px;
+	height: 40px;
+	border: 2px var(--c3) solid;
+	margin: 0;
+	padding: 0 10px;
+	width: 400px;
+	border-radius: 10px;
+	background-color: var(--c6);
+}
+
+input::placeholder{
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--c3);
+}
+
+
+button{
+	font-weight: 550;
+	color: var(--c6);
+	font-size: 16px;
+	border-radius: 30px;
+	height: 40px;
+	width: 170px;
+	margin-left: 0;
+	margin-top: 0;
+	cursor: pointer;
+}
+
+.botones{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.botonAceptar{
+	border: 1px var(--c1) solid;
+	background-color: var(--c1);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+}
+
+.botonDenegar{
+	border: 1px var(--c2) solid;
+	background-color: var(--c2);
+	box-shadow: 0px 0px 3px 3px var(--c4);
+}
+
+
+.botonAceptar:hover{
+	color: var(--c5);
+	box-shadow: 0px 0px 5px 5px var(--c3);
+}
+
+.botonDenegar:hover{
+	color: var(--c5);
+	box-shadow: 0px 0px 5px 5px var(--c4);
+}
+
+
+footer{
+	padding-top: 10px;
+	text-align: center;
+	background: var(--c5);
+	color: var(--c1);
+	height: 110px;
+	//line-height: 130px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.contenedor{
+	text-align: left;
+}
+
+.contenidoFooter{
+	margin-top: 10px;
+}
+
+p1{
+	font-size: 20px;
+	font-weight: 550;
+
+}
+
+@media (max-width: 1080px) {
+	.cuerpo{
+		width: 900px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.cuerpo{
+		width: 550px;
+	}
+
+	.portada{
+		width: 450px;
+	}
+
+}
+
+
+@media (max-width: 580px) {
+	.cuerpo{
+		max-width: 330px;
+		padding: 0;
+	}
+
+	.cajaLogin{
+		margin-top: 40px;
+		width: 300px;
+		padding: 25px 15px;
+	}
+
+	
+	.titulo{
+		margin-top: 0px;
+		font-size: 25px;
+		font-weight: 650;
+	}
+
+	.subtitulo{
+		margin-top: 10px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	input{
+		height: 35px;
+		font-weight: 450;
+		font-size: 15px;
+	}
+
+	input::placeholder{
+		font-weight: 450;
+		font-size: 15px;
+	}
+
+	.botones{
+		margin-top: 10px;
+		display: block;
+	}
+
+	button{
+		font-weight: 450;
+		font-size: 14px;
+		height: 35px;
+		width: 100%;
+	}
+
+	.botonAceptar{
+		margin-top: 10px;
+		box-shadow: 0px 0px 2px 2px var(--c3);
+	}
+
+	.botonDenegar{
+		margin-top: 10px;
+		box-shadow: 0px 0px 2px 2px var(--c3);
+	}
+
+	button:hover{
+		box-shadow: 0px 0px 3px 3px var(--c3);
+	}
+
+
+
+	footer{
+		padding-top: 5px;
+		height: 80px;
+	}
+
+	.contenidoFooter{
+		margin-top: 5px;
+	}
+
+	p1{
+		font-size: 15px;
+		font-weight: 500;
+
+	}
+
+	p{
+		font-size: 13px;
+	}
+
+}
+
+
+
+
+
+
