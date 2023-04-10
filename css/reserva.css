@@ -142,6 +142,43 @@ p1{
 
 }
 
+.error{
+	margin-top:22px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: 600;
+	background: var(--c5);
+	padding: 0 20px;
+	border-radius: 10px;
+	color: var(--c2);
+	border: 3px var(--c2) solid;
+	display: none;
+
+}
+
+.mostrarError{
+	display: block;
+}
+
+.error2{
+	margin-top:22px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: 600;
+	background: var(--c5);
+	padding: 0 20px;
+	border-radius: 10px;
+	color: var(--c2);
+	border: 3px var(--c2) solid;
+	display: none;
+
+}
+
+.mostrarError2{
+	display: block;
+}
+
+
 @media (max-width: 1080px) {
 	.cuerpo{
 		width: 900px;
