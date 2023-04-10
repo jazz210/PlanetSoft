@@ -38,6 +38,7 @@
 			<div class="cajaLogin">
 				<div class="titulo">Solicitar espacio en parqueo</div>
 				<div class="contenedor">
+					<form class="formulario" id="formulario" method="POST" name="formulario">
 
 					<div class="entrada">
 						<div class="subtitulo">CI:</div>
@@ -49,11 +50,19 @@
 					<div class="entrada">
 						<div class="subtitulo">Nombre Completo:</div>
 						<div class="formulario" id="inputNombre">
-							<input class = "entrada" autocomplete="off" type="text" name="nombre" placeholder="Ingrese su nombre completo">
+							<input class = "entrada" autocomplete="off" type="text" name="nombre" id="nombre" value="" placeholder="Ingrese su nombre completo"  readonly>
 						</div>
 					</div>
 
-					<ul id="nombre"></ul>
+
+					<div class="entrada">
+						<div class="subtitulo">N° de placa:</div>
+						<div class="formulario" id="inputPlaca">
+							<input class = "entrada" autocomplete="off" type="text" name="placa" placeholder="Ingrese la placa ">
+						</div>
+					</div>
+
+					
 
 					<div class="entrada">
 					
@@ -64,11 +73,21 @@
 					</div>
 
 					
+						<div class="error" id="error">
+							<p>Carnet de identidad incorrecto</p>
+					
+						</div>
+
+						<div class="error2" id="error2">
+							<p>Todos los campos son obligatorios</p>
+					
+						</div>
 					
 					<div class="botones">	
-						<button class="botonAceptar" name ="botonAceptar" onclick="location.href=''">Solicitar</button>	
-						<button class="botonDenegar" name ="botonDenegar" onclick="location.href='reservar.html'">Salir</button>
+						<button type="submmit" class="botonAceptar">Solicitar</button>	
+						<button class="botonDenegar" name ="botonDenegar" onclick="location.href='inicio.html'">Salir</button>
 					</div>
+					</form>
 				</div> 
 			</div>
 		</div>
