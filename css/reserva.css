@@ -12,11 +12,11 @@
 
 .cajaLogin{
 	margin-top: 30px;
-	width: 800px;
+	width: 950px;
 	background-color: var(--c5);
 	box-shadow: 0px 0px 5px 5px var(--c3);
 	border-radius: 15px;
-	padding: 25px 50px;
+	padding: 25px 20px;
 }
 
 .titulo{
@@ -26,10 +26,18 @@
 	text-align: center;
 }
 
+.titulo2{
+	margin-bottom: 10px;
+	font-size: 25px;
+	font-weight: 650;
+	text-align: center;
+}
+
+
 .subtitulo{
 	padding-top: 10px;
 	text-align: center;
-	width:250px;
+	width:200px;
 	margin-top: 10px;
 	font-size: 20px;
 	font-weight: 550;
@@ -62,7 +70,7 @@ input{
 	border: 2px var(--c3) solid;
 	margin: 0;
 	padding: 0 10px;
-	width: 400px;
+	width: 380px;
 	border-radius: 10px;
 	background-color: var(--c6);
 }
@@ -72,6 +80,7 @@ input::placeholder{
 	font-size: 18px;
 	color: var(--c3);
 }
+
 
 
 button{
@@ -86,6 +95,14 @@ button{
 	cursor: pointer;
 }
 
+.caja{
+	display: flex;
+}
+
+.lista{
+	width: 330px;
+}
+
 .botones{
 	margin-top: 30px;
 	display: flex;
@@ -97,6 +114,16 @@ button{
 	background-color: var(--c1);
 	box-shadow: 0px 0px 3px 3px var(--c3);
 }
+
+.botonParqueo{
+	font-size: 14px;
+	width: 60px;
+	height: 25px;
+	border: 1px var(--c1) solid;
+	background-color: var(--c1);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+}
+
 
 .botonDenegar{
 	border: 1px var(--c2) solid;
@@ -110,10 +137,73 @@ button{
 	box-shadow: 0px 0px 5px 5px var(--c3);
 }
 
+.botonParqueo:hover{
+	color: var(--c5);
+	box-shadow: 0px 0px 5px 5px var(--c3);
+}
+
 .botonDenegar:hover{
 	color: var(--c5);
 	box-shadow: 0px 0px 5px 5px var(--c4);
 }
+
+
+.cajaLista{
+	text-align: left;
+	width: 320px;
+	height: 280px;
+	border: 3px solid var(--c3);
+	overflow: auto;
+	padding: 10px 20px;
+}
+
+
+.botonParqueo2{
+	margin-top: 10px;
+	border: 0px var(--c1) solid;
+	background-color: var(--c1);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	padding: 0;
+	margin-left: 15px;
+}
+
+.botonParqueo2:hover{
+	color: var(--c5);
+	box-shadow: 0px 0px 5px 5px var(--c3);
+}
+
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td,th{
+	border: 2px var(--c1) solid;
+	padding:5px 10px;
+	text-align: center;
+}
+
+th{
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--c1);
+}
+
+td{
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--c1);
+	text-align: left;
+}
+
+td.num,td.fech{
+	text-align: center;
+}
+
 
 
 footer{
@@ -161,12 +251,12 @@ p1{
 }
 
 .error2{
-	margin-top:22px;
-	height: 50px;
-	line-height: 50px;
+	margin-top:10px;
+	height: 40px;
+	line-height: 40px;
 	font-weight: 600;
 	background: var(--c5);
-	padding: 0 20px;
+	padding: 0 40px;
 	border-radius: 10px;
 	color: var(--c2);
 	border: 3px var(--c2) solid;
@@ -174,9 +264,26 @@ p1{
 
 }
 
+
+
 .mostrarError2{
 	display: block;
 }
+
+.imgQR{
+	width: 110px;
+	height: 110px;
+	margin-left: 20px;
+	border-radius: 0px;
+}
+
+.contenedorQR{
+	display:flex;
+	justify-content: center;
+	width: 110px;
+	height: 110px;
+}
+
 
 
 @media (max-width: 1080px) {

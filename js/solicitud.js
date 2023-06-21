@@ -2,6 +2,14 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const inp = document.querySelectorAll('#formulario textarea');
 
+function elegir(espacio, bloque){
+	var numero	=espacio;
+	var bloq 	=bloque;
+	document.getElementById('espacio').value = numero;
+	document.getElementById('bloque').value = bloq;
+		
+}
+
 const validar = (e) =>{
 
 		document.getElementById('error2').classList.add('mostrarError2');
@@ -53,7 +61,7 @@ formulario.addEventListener('submit',  function(e){
 	var datos = new FormData(formulario);
 
 
-	if(datos.get('nombre')!="" && datos.get('ci')!="" && datos.get('placa')!="" &&  datos.get('mensaje') ){
+	if(datos.get('nombre')!="" && datos.get('ci')!="" && datos.get('placa')!=""){
 		if(datos.get('nombre')!="No Encontrado"){
 			var datos2 = new FormData(formulario);
 			fetch('./php/reserva.php',{

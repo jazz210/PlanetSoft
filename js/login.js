@@ -35,9 +35,11 @@ formulario.addEventListener('submit', function(e){
 				if(data === 'error'){
 					document.getElementById('error').classList.add('mostrarError');
 
-			}else if(data === 'correcto'){
+				}else if(data === 'usuario'){
 				 	window.location.href = "inicio.html";
-				}
+					}else if(data == 'admin'){
+						window.location.href = "inicioAdmin.html";
+					}
 			})
 	}else{
 		document.getElementById('error2').classList.add('mostrarError2');

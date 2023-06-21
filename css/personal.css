@@ -1,0 +1,351 @@
+.pagina{
+	min-height: calc(85vh - 115px);
+}
+
+
+.cuerpo{
+	display: flex;
+	text-align: center;
+	width: 1080px;
+	padding: 10px 0;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+	
+}
+
+.caja{
+	display: flex;
+}
+
+.descripcion{
+	margin-top: 5px;
+	font-size: 17px;
+	font-weight: 500;
+	color: var(--c1);
+	 height: 100px;
+   	 width: 100%;
+   	 resize: none;
+	padding: 8px;
+}
+
+.cajaLogin{
+	margin-top: 20px;
+	width: 600px;
+	background-color: var(--c5);
+	box-shadow: 0px 0px 5px 5px var(--c3);
+	border-radius: 15px;
+	padding: 25px 50px;
+}
+
+.titulo{
+	margin-top: 0px;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.subtitulo{
+	margin-top: 8px;
+	font-size: 20px;
+	font-weight: 550;
+}
+
+.subtitulo2{
+	margin-left: 10px;
+	font-size: 16px;
+	font-weight: 550;
+}
+input{
+	color: var(--c1);
+	font-weight: 500;
+	font-size: 18px;
+	height: 35px;
+	border: 2px var(--c3) solid;
+	margin: 0;
+	padding: 0 5px;
+	width: calc(100% - 0px);
+	width: 330px;
+	border-radius: 10px;
+	background-color: var(--c6);
+}
+
+.foto{
+	margin-top: 10px;
+	margin-right: 20px;
+}
+input::placeholder{
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--c3);
+}
+
+
+button{
+	font-weight: 550;
+	color: var(--c6);
+	font-size: 16px;
+	border-radius: 30px;
+	height: 35px;
+	width: 170px;
+	margin-left: 0;
+	margin-top: 0;
+	cursor: pointer;
+}
+
+.botones{
+	margin-top: 15px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.botonAceptar{
+	border: 1px var(--c1) solid;
+	background-color: var(--c1);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+}
+
+.botonDenegar{
+	border: 1px var(--c2) solid;
+	background-color: var(--c2);
+	box-shadow: 0px 0px 3px 3px var(--c4);
+}
+
+
+.botonAceptar:hover{
+	color: var(--c5);
+	box-shadow: 0px 0px 5px 5px var(--c3);
+}
+
+.botonDenegar:hover{
+	color: var(--c5);
+	box-shadow: 0px 0px 5px 5px var(--c4);
+}
+
+.error{
+	margin-top:10px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: 600;
+	background: var(--c5);
+	padding: 0 20px;
+	border-radius: 10px;
+	color: var(--c2);
+	border: 3px var(--c2) solid;
+	display: none;
+
+}
+
+.mostrarError{
+	display: block;
+}
+
+.errorInput{
+	margin-top:2px;
+	height: 30px;
+	line-height: 25px;
+	font-weight: 600;
+	background: var(--c5);
+	padding: 0 20px;
+	border-radius: 10px;
+	color: var(--c2);
+	border: 3px var(--c2) solid;
+	display: none;
+
+}
+
+.mostrarErrorInput{
+	display: block;
+}
+
+
+.error2{
+	margin-top:10px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: 600;
+	background: var(--c5);
+	padding: 0 20px;
+	border-radius: 10px;
+	color: var(--c2);
+	border: 3px var(--c2) solid;
+	display: none;
+
+}
+
+.mostrarError2{
+	display: block;
+}
+
+.error3{
+	margin-top:10px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: 600;
+	background: var(--c5);
+	padding: 0 20px;
+	border-radius: 10px;
+	color: var(--c2);
+	border: 3px var(--c2) solid;
+	display: none;
+
+}
+
+.mostrarError3{
+	display: block;
+}
+
+
+.mostrarContrasenia{
+	height: 25px;
+	display: flex;
+	justify-content: flex-star;
+	align-items: center;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.botonContrasenia{
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	border: 5px var(--c1) solid;
+}
+
+
+
+footer{
+	padding-top: 10px;
+	text-align: center;
+	background: var(--c5);
+	color: var(--c1);
+	height: 110px;
+	//line-height: 130px;
+	//position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.contenedor{
+	text-align: left;
+}
+
+.contenidoFooter{
+	margin-top: 10px;
+}
+
+p1{
+	font-size: 20px;
+	font-weight: 550;
+
+}
+
+@media (max-width: 1080px) {
+	.cuerpo{
+		width: 900px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.cuerpo{
+		width: 550px;
+	}
+
+	.portada{
+		width: 450px;
+	}
+
+}
+
+
+@media (max-width: 580px) {
+	.cuerpo{
+		max-width: 330px;
+		padding: 0;
+	}
+
+	.cajaLogin{
+		margin-top: 40px;
+		width: 300px;
+		padding: 25px 15px;
+	}
+
+	
+	.titulo{
+		margin-top: 0px;
+		font-size: 25px;
+		font-weight: 650;
+	}
+
+	.subtitulo{
+		margin-top: 10px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	input{
+		height: 35px;
+		font-weight: 450;
+		font-size: 15px;
+	}
+
+	input::placeholder{
+		font-weight: 450;
+		font-size: 15px;
+	}
+
+	.botones{
+		margin-top: 10px;
+		display: block;
+	}
+
+	button{
+		font-weight: 450;
+		font-size: 14px;
+		height: 35px;
+		width: 100%;
+	}
+
+	.botonAceptar{
+		margin-top: 10px;
+		box-shadow: 0px 0px 2px 2px var(--c3);
+	}
+
+	.botonDenegar{
+		margin-top: 10px;
+		box-shadow: 0px 0px 2px 2px var(--c3);
+	}
+
+	button:hover{
+		box-shadow: 0px 0px 3px 3px var(--c3);
+	}
+
+
+
+	footer{
+		padding-top: 5px;
+		height: 80px;
+	}
+
+	.contenidoFooter{
+		margin-top: 5px;
+	}
+
+	p1{
+		font-size: 15px;
+		font-weight: 500;
+
+	}
+
+	p{
+		font-size: 13px;
+	}
+
+}
+
+
+
+
+
+

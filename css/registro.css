@@ -11,7 +11,7 @@
 }
 
 .cajaLogin{
-	margin-top: 30px;
+	margin-top: 20px;
 	width: 600px;
 	background-color: var(--c5);
 	box-shadow: 0px 0px 5px 5px var(--c3);
@@ -21,25 +21,30 @@
 
 .titulo{
 	margin-top: 0px;
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 700;
 	text-align: center;
 }
 
 .subtitulo{
-	margin-top: 10px;
+	margin-top: 8px;
 	font-size: 20px;
 	font-weight: 550;
 }
 
+.subtitulo2{
+	margin-left: 10px;
+	font-size: 16px;
+	font-weight: 550;
+}
 input{
 	color: var(--c1);
 	font-weight: 500;
 	font-size: 18px;
-	height: 40px;
+	height: 35px;
 	border: 2px var(--c3) solid;
 	margin: 0;
-	padding: 0 10px;
+	padding: 0 5px;
 	width: calc(100% - 0px);
 	border-radius: 10px;
 	background-color: var(--c6);
@@ -57,7 +62,7 @@ button{
 	color: var(--c6);
 	font-size: 16px;
 	border-radius: 30px;
-	height: 40px;
+	height: 35px;
 	width: 170px;
 	margin-left: 0;
 	margin-top: 0;
@@ -65,7 +70,7 @@ button{
 }
 
 .botones{
-	margin-top: 30px;
+	margin-top: 15px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -94,7 +99,7 @@ button{
 }
 
 .error{
-	margin-top:22px;
+	margin-top:10px;
 	height: 50px;
 	line-height: 50px;
 	font-weight: 600;
@@ -111,8 +116,27 @@ button{
 	display: block;
 }
 
+.errorInput{
+	margin-top:2px;
+	height: 30px;
+	line-height: 25px;
+	font-weight: 600;
+	background: var(--c5);
+	padding: 0 20px;
+	border-radius: 10px;
+	color: var(--c2);
+	border: 3px var(--c2) solid;
+	display: none;
+
+}
+
+.mostrarErrorInput{
+	display: block;
+}
+
+
 .error2{
-	margin-top:22px;
+	margin-top:10px;
 	height: 50px;
 	line-height: 50px;
 	font-weight: 600;
@@ -130,7 +154,7 @@ button{
 }
 
 .error3{
-	margin-top:22px;
+	margin-top:10px;
 	height: 50px;
 	line-height: 50px;
 	font-weight: 600;
@@ -145,6 +169,23 @@ button{
 
 .mostrarError3{
 	display: block;
+}
+
+
+.mostrarContrasenia{
+	height: 25px;
+	display: flex;
+	justify-content: flex-star;
+	align-items: center;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.botonContrasenia{
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	border: 5px var(--c1) solid;
 }
 
 

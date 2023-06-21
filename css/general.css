@@ -23,6 +23,51 @@ body{
 
 }
 
+ul, ol{
+	list-style: none;
+}
+
+
+
+.nav li a{
+	background-color: var(--c1);
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+	font-size: 18px;
+	min-width: 120px;
+	
+}
+
+
+.nav a:hover{
+	background-color: var(--c3);
+}
+.nav > li {
+	float: left;
+}
+
+.menu{
+	margin-top:40px;
+}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+	
+}
+
+
+.nav li:hover > ul{
+	display: block;
+
+}
+
+.logoP{
+	margin-top: 20px;
+	margin-right: 10px;
+}
 
 .cabecera{
 	position: fixed;
@@ -35,8 +80,11 @@ body{
 	z-index: 100;
 }
 
+.izquierda{
+	display: flex;
+}
 .barraSuperior{
-	padding: 20px;
+	padding: 16px;
 	display: flex;
 	justify-content: space-between;
 	max-width: 1080px;

@@ -17,8 +17,9 @@ $fila = mysqli_fetch_array($respuesta);
 
 if(!$fila){
 	$consulta = "INSERT INTO usuario VALUES ('$nombre' , '$ci' , '$celular','$email' ,'$contrasenia')";
+	$consulta2 = "INSERT INTO reporte VALUES ('$ci' , '$nombre' , '0','70' ,'0')";
 
-		if(mysqli_query($conexion, $consulta)){
+		if(mysqli_query($conexion, $consulta) && mysqli_query($conexion, $consulta2)){
 				echo json_encode('correcto');
 			
 		}else {
