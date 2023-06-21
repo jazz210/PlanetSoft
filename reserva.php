@@ -1,3 +1,7 @@
+<?php
+include("php/conexion.php");
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -37,6 +41,44 @@
 		<div class="cuerpo">
 			<div class="cajaLogin">
 				<div class="titulo">Solicitar espacio en parqueo</div>
+				<div class="caja">
+				<div class="lista">
+				<div class="cajaLista">
+					<div class="boton">
+						<div class="titulo2">Espacios Libres</div>
+					</div>
+
+
+					<table id="tablaTecnica">
+						<tr>
+							<th>N°</th>
+							<th>Bloque</th>
+							<th>Elegir</th>
+						</tr>
+
+						<?php
+							$sql="SELECT * FROM parqueo WHERE libre = 'si'";
+							$result=mysqli_query($conexion,$sql);
+							while($mostrar=mysqli_fetch_array($result)){
+						?>
+							<tr>
+								<td class="fech"><?php echo $mostrar['numero']?></td>
+								<td class="fech"><?php echo $mostrar['bloque']?></td>
+								<td class="fech"><button class="botonParqueo" name ="botonParqueo" onclick="elegir(<?php echo $mostrar['numero']?> , <?php echo $mostrar['bloque']?>);">Si</button></td>
+						<?php
+							}
+						?>
+
+					</table>
+
+				
+
+				</div>
+
+				<div class="boton">
+						<button class="botonParqueo2" name ="botonParqueo2" onclick="location.href='mapa2.php'"><img src="imagenes/parqueo.png" alt="parqueo" height="80" width="80"></button>
+					</div>
+				</div>
 				<div class="contenedor">
 					<form class="formulario" id="formulario" method="POST" name="formulario">
 
@@ -62,17 +104,21 @@
 						</div>
 					</div>
 
-					
-
 					<div class="entrada">
-					
-						<div class="formulario" id="inputsolicitud">
-                					<textarea name="mensaje" id="mensaje" class="descripcion" placeholer="Escriba su consulta."></textarea>
-			
+						<div class="subtitulo">Espacio:</div>
+						<div class="formulario" id="inputEspacio">
+							<input class = "entrada" autocomplete="off" type="text" name="espacio" id="espacio" placeholder="Numero de Espacio " readonly>
 						</div>
 					</div>
 
-					
+					<div class="entrada">
+						<div class="subtitulo">Bloque:</div>
+						<div class="formulario" id="inputBloque">
+							<input class = "entrada" autocomplete="off" type="text" name="bloque" id="bloque" placeholder="Numero de Bloque" readonly>
+						</div>
+					</div>
+
+
 						<div class="error" id="error">
 							<p>Carnet de identidad incorrecto</p>
 					
@@ -89,6 +135,7 @@
 					</div>
 					</form>
 				</div> 
+				</div>
 			</div>
 		</div>
 	</section>

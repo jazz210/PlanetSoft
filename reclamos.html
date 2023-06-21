@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   	<title>Parqueo</title>
+
+   	<!--<link rel="shortcut icon" href="imagenes/logo.ico">-->
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>
+   	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/reclamo.css">
+ 	
+
+</head>
+
+<body >
+	<header class="cabecera">
+    		<nav class="barraSuperior">
+           		<div class="logo">
+              			<img class="logoUmss" src="imagenes/logoU.png" alt="logo" height="100" width="100"/>
+             			<div class="texLogo">UMSS</div>
+          		</div>
+			
+			<div class="logo">
+              			<img class="logoFcyt" src="imagenes/logoF.png" alt="logo" height="100" width="100"/>
+             			<div class="texLogo">FCyT</div>
+          		</div>	
+        	</nav>
+	</header>
+
+	<section class="pagina">
+		<div class="cuerpo">
+
+			<div class="cajaLogin">
+				<div class="titulo">Reclamos</div>
+				<div class="caja">
+				<div class="contenedor">
+				<form class="formulario" id="formulario" method="POST" enctype="multipart/form-data" name="formulario">
+					<div class="subtitulo">Asunto:</div>
+
+						<textarea name="mensaje" id="mensaje" class="descripcion" placeholer="Escriba aqui la Publicacion"> </textarea>
+			
+						
+                			
+				<input class="archivo" type="file" id="archivo" name="archivo">
+				
+
+					<div class="error2" id="error2">
+						<p>El asunto no puede quedar vacio</p>
+					
+					</div>
+					
+					<div class="botones">	
+						<button type="submit" class="botonAceptar" name ="registrar">Enviar</button>
+						<button type="button" class="botonDenegar" name ="registrar" onclick="location.href='reclamoCancelado.html'">Cancelar</button>	
+					</div>
+				</form>
+				</div> 
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<script src="js/reclamos.js"></script>
+
+	<footer>
+		<p1>Contactanos</p1>
+		<div class="contenidoFooter">
+			<p> Celular: 73770458</p>
+			<p> E-mail: planetsoft166@gmail.com</p>
+			<p> Dirección: Av. America y Calle Rosales N°1556</p>
+		</div>
+	</footer>
+	
+</body> 
+
+</html>

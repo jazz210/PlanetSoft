@@ -2,7 +2,7 @@
 $servidor 	= "localhost";
 $usuario  	= "root";
 $contrasenha	= "";
-$BD		= "parqueo";
+$BD		= "parqueo2";
 
 
 $conexion = mysqli_connect($servidor, $usuario, $contrasenha, $BD);

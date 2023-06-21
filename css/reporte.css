@@ -1,0 +1,385 @@
+.cuerpo{
+	//display: flex;
+	text-align: center;
+	width: 1080px;
+	//min-height: 73vh;
+	padding: 0 0 10px 0;
+	margin: 0 auto;
+	align-items: center;
+	
+}
+
+.titulo{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	
+}
+
+.titulo2{
+	margin-top: 150px;
+	margin-bottom: 100px;
+	font-size: 28px;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+.subtitulo{
+	padding-top: 10px;
+	text-align: center;
+	width:250px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 550;
+}
+
+.subtitulo2{
+	text-align: left;
+	margin-right: 20px;
+	font-size: 20px;
+	font-weight: 550;
+}
+
+input#ci.entrada{
+	color: var(--c1);
+	font-weight: 500;
+	font-size: 18px;
+	height: 40px;
+	border: 2px var(--c3) solid;
+	margin: 0;
+	padding: 0 10px;
+	width: calc(100% - 0px);
+	border-radius: 10px;
+	background-color: var(--c6);
+}
+
+.subtitulo3{
+	margin-top: 8px;
+	text-align: left;
+	margin-right: 20px;
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: 550;
+}
+
+.cajita{
+	display: flex;
+}
+
+.portada{
+	width: 600px;
+	height: 400px;
+	margin-top: 50px;
+	border-radius: 0px;
+	border: 0px solid var(--c1);
+}
+
+button{
+	font-weight: 550;
+	color: var(--c6);
+	font-size: 16px;
+	border-radius: 30px;
+	height: 40px;
+	width: 170px;
+	margin-left: 0;
+	margin-top: 0;
+	cursor: pointer;
+}
+
+.busqueda{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.mostrarSemana{
+	margin-top: 8px;
+	display: flex;
+}
+
+.botonSemana{
+	width: 25px;
+	height: 25px;
+	margin-right: 20px;
+}
+.botonN{
+	font-weight: 550;
+	color: var(--c6);
+	font-size: 16px;
+	border-radius: 30px;
+	height: 40px;
+	width: 100px;
+	margin-left: 0;
+	margin-top: 0;
+	cursor: pointer;
+	border: 1px var(--c2) solid;
+	background-color: var(--c2);
+	padding:0 10px;
+}
+
+.botonG{
+	font-weight: 550;
+	color: var(--c6);
+	font-size: 16px;
+	border-radius: 30px;
+	height: 40px;
+	width: 100px;
+	margin-left: 0;
+	margin-top: 0;
+	cursor: pointer;
+	border: 1px var(--c1) solid;
+	background-color: var(--c1);
+	padding:0 10px;
+}
+
+.botonGu{
+	font-weight: 550;
+	color: var(--c6);
+	font-size: 16px;
+	border-radius: 30px;
+	height: 40px;
+	width: 100px;
+	margin-left: 0;
+	margin-top: 0;
+	cursor: pointer;
+	border: 1px var(--c1) solid;
+	background-color: var(--c1);
+	padding:0 10px;
+	margin-left: 10px;
+}
+
+
+input{
+	outline: none;
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--c1);
+	width: 65px;
+	border: 0;
+	padding-left: 5px;
+}
+
+.botonNo{
+	border-radius: 50px;
+	margin-left: 30px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.botonSi{
+	cursor: pointer;
+}
+.botonAceptar{
+	margin-top: 40px;
+	border: 1px var(--c1) solid;
+	background-color: var(--c1);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+	margin-left: 15px;
+}
+
+.botonParqueo{
+	margin-top: 40px;
+	border: 0px var(--c1) solid;
+	background-color: var(--c1);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+	border-radius: 50px;
+	width: 80px;
+	height: 80px;
+	padding: 0;
+	margin-left: 15px;
+}
+
+
+.botonCancelar{
+	margin-top: 40px;
+	border: 1px var(--c2) solid;
+	background-color: var(--c2);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+	margin-left: 15px;
+}
+
+
+.botonAceptar1{
+	margin-top: 40px;
+	border: 1px var(--c1) solid;
+	background-color: var(--c1);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+	width: 200px;
+	margin-right: 15px;
+}
+
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+a{
+	text-decoration:none;
+}
+
+td,th{
+	border: 2px var(--c1) solid;
+	padding:5px 20px;
+	text-align: center;
+}
+
+th{
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--c1);
+}
+
+.botones{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+td{
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--c1);
+	text-align: left;
+}
+
+td.num,td.fech{
+	
+	text-align: center;
+}
+
+
+
+.boton2{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.botonPa{
+	display: flex;
+	justify-content:  flex-start;
+}
+
+.botonCerrar{
+	border-radius: 0px;
+	border: 1px var(--c2) solid;
+	background-color: var(--c2);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+}
+
+button:hover{
+	color: var(--c5);
+	box-shadow: 0px 0px 5px 5px var(--c3);
+}
+
+
+
+footer{
+	padding-top: 10px;
+	text-align: center;
+	background: var(--c5);
+	color: var(--c1);
+	height: 110px;
+	//line-height: 130px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.contenidoFooter{
+	margin-top: 10px;
+}
+
+p1{
+	font-size: 20px;
+	font-weight: 550;
+
+}
+
+@media (max-width: 1080px) {
+	.cuerpo{
+		width: 900px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.cuerpo{
+		width: 550px;
+	}
+
+	.portada{
+		width: 450px;
+	}
+
+}
+
+
+@media (max-width: 580px) {
+	.cuerpo{
+		max-width: 330px;
+		padding: 0;
+	}
+
+	
+	.titulo{
+		margin-top: 10px;
+		font-size: 25px;
+		font-weight: 650;
+	}
+
+	.portada{
+		width: 300px;
+		height: 220px;
+		margin-top: 10px;
+	}
+
+	button{
+		font-weight: 450;
+		font-size: 14px;
+		border-radius: 30px;
+		height: 30px;
+		width: 130px;
+	}
+
+	.botonAceptar{
+		margin-top: 20px;
+		box-shadow: 0px 0px 2px 2px var(--c3);
+	}
+
+	button:hover{
+		box-shadow: 0px 0px 3px 3px var(--c3);
+	}
+
+
+
+	footer{
+		padding-top: 5px;
+		height: 80px;
+	}
+
+	.contenidoFooter{
+		margin-top: 5px;
+	}
+
+	p1{
+		font-size: 15px;
+		font-weight: 500;
+
+	}
+
+	p{
+		font-size: 13px;
+	}
+
+}
+
+
+
+
+
+

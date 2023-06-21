@@ -35,6 +35,7 @@
 
 	<section class="pagina">
 		<div class="cuerpo">
+
 			<div class="cajaLogin">
 				<div class="titulo">Registro</div>
 				<div class="contenedor">
@@ -42,32 +43,59 @@
 					<div class="subtitulo">Nombre y Apellido:</div>
 					<div class="formulario" id="inputNombre">
 						<input class = "entrada" autocomplete="off" type="text" name="nombre" placeholder="Ingrese su usuario">
+						<p class="errorInput" id="errorInput">Solo se permiten letras</p>
 					</div>
 
 					<div class="subtitulo">CI:</div>
 					<div class="formulario" id="inputCi">
 						<input class = "entrada" autocomplete="off" type="text" name="ci" placeholder="Ingrese su usuario">
+						<p class="errorInput" id="errorInput">Numero de carnet no valido</p>
 					</div>
 
 					<div class="subtitulo">Celular:</div>
 					<div class="formulario" id="inputCelular">
 						<input class = "entrada" autocomplete="off" type="text" name="celular" placeholder="Ingrese su celular">
+						<p class="errorInput" id="errorInput">Numero de celular no valido</p>
 					</div>
 
 					<div class="subtitulo">Email:</div>
 					<div class="formulario" id="inputEmail">
 						<input class = "entrada" autocomplete="off" type="text" name="email" placeholder="Ingrese su correo electronico">
+						<p class="errorInput" id="errorInput">Correo no valido</p>
 					</div>
 						
                 			<div class="subtitulo">Contraseña:</div>
 					<div class="formulario" id="inputContrasenia">
                 				<input class = "entrada" autocomplete="off" type="password" name="contrasenia" id="contrasenia" placeholder="Ingrese la contraseña">
+						<p class="errorInput" id="errorInput">Minimo 8 caracteres y Mayusculas</p>
 					</div>
 
 					<div class="subtitulo">Confirmar contraseña:</div>
 					<div class="formulario" id="inputContrasenia">
                 				<input class = "entrada" autocomplete="off" type="password" name="contrasenia2" id="contrasenia2" placeholder="Repita la contraseña">
 					</div>
+
+					
+					<div class="mostrarContrasenia">
+						<input  type="checkbox" class="botonContrasenia" id="botonContrasenia" onclick="mostrar()">
+						<div class="subtitulo2">Mostrar Contraseñas</div>
+					</div>
+
+					<script type="text/javascript">
+						function mostrar(){
+							var shows = document.getElementById('contrasenia')
+							var show = document.getElementById('contrasenia2')
+							if(shows.type=='password'){
+								shows.type='text';
+								show.type='text';
+							}else{
+								shows.type='password';
+								show.type='password';
+							}
+							
+						}
+					</script>
+
 
 					<div class="error" id="error">
 						<p>El correo ya esta registrado</p>
@@ -91,6 +119,7 @@
 				</form>
 				</div> 
 			</div>
+
 		</div>
 	</section>
 

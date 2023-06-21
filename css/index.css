@@ -10,7 +10,7 @@
 }
 
 .titulo{
-	margin-top: 40px;
+	margin-top: 10px;
 	font-size: 35px;
 	font-weight: 700;
 	text-align: center;
@@ -36,9 +36,9 @@
 
 
 .portada{
-	width: 600px;
-	height: 400px;
-	margin-top: 50px;
+	width: 500px;
+	height: 350px;
+	margin-top: 20px;
 	border-radius: 0px;
 	border: 0px solid var(--c1);
 }
@@ -55,8 +55,55 @@ button{
 	cursor: pointer;
 }
 
+.bloque{
+	display:flex;
+	justify-content: flex-start;
+	aling-items: center;
+	padding: auto;
+}
+
+
+
+.botonIcono{
+	margin-bottom: 10px;
+	border: 0px var(--c1) solid;
+	background-color: var(--c1);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+	border-radius: 8px;
+	width: 30px;
+	height: 30px;
+
+}
+
+
+.botonIcono2{
+	margin-bottom: 0px;
+	border: 0px var(--c1) solid;
+	background-color: var(--c1);
+	box-shadow: 0px 0px 3px 3px var(--c3);
+	border-radius: 8px;
+	width: 30px;
+	height: 30px;
+
+}
+
+
+.cuadroC{
+	width: 280px;
+}
+
+.consulta{
+	justify-content: flex-end;
+	display: flex;
+}
+
+h4{
+	margin-top: 8px;
+	margin-left: 15px;
+}
+
 .botonAceptar{
-	margin-top: 40px;
+	margin-top: 10px;
 	border: 1px var(--c1) solid;
 	background-color: var(--c1);
 	box-shadow: 0px 0px 3px 3px var(--c3);
